@@ -1,6 +1,7 @@
 fun main() {
 
     fun detectUniqueCharsEndPosition(input: String, amount: Int): Int {
+//        Could (and should) have been done with .windowed()
         val lastChars = mutableListOf<Char>()
         input.forEachIndexed { index, char ->
             lastChars.add(char)
